@@ -1,21 +1,9 @@
 import { useState } from "react"
 
-export default function Scoreboard() {
-
+export default function Scoreboard(name: { double1: { player1: string, player2: string }, double2: { player1: string, player2: string } }) {
   const [maximum, setMaximum] = useState({
     games: 6,
     sets: 2,
-  })
-
-  const [name, setName] = useState({
-    double1: {
-      player1: 'Will',
-      player2: 'JP'
-    },
-    double2: {
-      player1: 'JanJan',
-      player2: 'Rian'
-    }
   })
 
   const [score, setScore] = useState({
